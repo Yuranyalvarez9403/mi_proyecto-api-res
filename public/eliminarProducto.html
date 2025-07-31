@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Producto</title>
+</head>
+
+<body>
+    <h2>Eliminar Producto</h2>
+
+    <form id="buscarForm">
+        <label for="buscarId">ID del producto a eliminar:</label><br>
+        <input type="number" id="buscarId" required>
+        <button type="button" onclick="buscarProducto()">Buscar</button>
+    </form>
+
+    <div id="productoInfo" style="display:none; margin-top: 20px;">
+        <h3>Producto encontrado</h3>
+        <p><strong>ID:</strong> <span id="infoId"></span></p>
+        <p><strong>Nombre:</strong> <span id="infoNombre"></span></p>
+        <p><strong>Descripción:</strong> <span id="infoDescripcion"></span></p>
+        <p><strong>Precio:</strong> $<span id="infoPrecio"></span></p>
+        <button onclick="eliminarProducto()">Eliminar producto</button><br><br>
+        <a href="../menu.html">volver al menu</a>
+
+    </div>
+
+    <script src="../controllers/eliminarProducto.js"></script>
+</body>
+
+</html>

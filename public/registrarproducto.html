@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar producto</title>
+</head>
+<body>
+    <h2>Registrar nuevo producto</h2>
+    <form id="productoForm">
+        <label for="nombre">Nombre del producto:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" step="0.01" id="precio" name="precio" required><br><br>
+        
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+        
+        <!-- Corregido el nombre de la función -->
+        <button type="button" onclick="registrarProducto()">Registrar</button><br><br>
+        <a href="../menu.html">volver al menu</a>
+
+    </form>
+    <script src="../controllers/registrarProducto.js"></script>
+</body>
+</html>
